@@ -12,19 +12,15 @@
 .main-section__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  border: 1px solid red;
 }
 
 h1 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 700;
-  border: 1px solid red;
 }
 
 .article-text {
-  border: 1px solid red;
 }
 
 .main-section__content h2 {
@@ -39,7 +35,7 @@ h1 {
 .main-section__video {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+
   align-items: center;
   justify-content: center;
   font-weight: 700;
@@ -63,4 +59,19 @@ h1 {
   font-size: small;
   font-weight: bold;
   color: var(--light-blue);
+}
+.bottom-articles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.article:nth-child(1) {
+  border-right: 1px solid var(--light-gray);
+  width: 100%;
+  margin-left: 10px;
 }
